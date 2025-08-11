@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwa Mathe - Food Order Form</title>
+</head>
+<body>
+
+<header>
+    <h1>Kwa Mathe</h1>
+    <p>Authentic Kenyan Meals & Meal Prepping Services</p>
+</header>
+
+<main>
+    <!-- Media -->
+    <figure>
+        <img src="kwamathe.png" alt="Kwa Mathe Kitchen" width="400">
+        <figcaption>Kwa Mathe Kitchen - Where Kenyan Flavours Come Alive</figcaption>
+    </figure>
+
+    <!-- List -->
+    <section>
+        <h2>Popular Meals</h2>
+        <ul>
+            <li>Nyama Choma with Ugali</li>
+            <li>Pilau with Kachumbari</li>
+            <li>Chapati & Beans Stew</li>
+            <li>Matoke & Beef Stew</li>
+        </ul>
+    </section>
+
+    <!-- Table -->
+    <section>
+        <h2>Price List</h2>
+        <table border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Meal</th>
+                    <th>Price (KES)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nyama Choma with Ugali</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td>Pilau with Kachumbari</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Chapati & Beans Stew</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Matoke & Beef Stew</td>
+                    <td>600</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Form -->
+    <section>
+        <h2>Place Your Order</h2>
+        <form action="#" method="post" autocomplete="on">
+
+            <label for="name">Full Name*</label><br>
+            <input type="text" id="name" name="name" placeholder="e.g. Jane Wanjiku" required autocomplete="name"><br><br>
+
+            <label for="email">Email*</label><br>
+            <input type="email" id="email" name="email" placeholder="e.g. jane@example.com" required autocomplete="email"><br><br>
+
+            <label for="phone">Phone Number*</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^(\+254|0)7\d{8}$" 
+                   title="Use format +2547XXXXXXXX or 07XXXXXXXX" required autocomplete="tel"><br><br>
+
+            <label for="meal">Select Meal*</label><br>
+            <select id="meal" name="meal" required>
+                <option value="">-- Choose a Meal --</option>
+                <option>Nyama Choma with Ugali</option>
+                <option>Pilau with Kachumbari</option>
+                <option>Chapati & Beans Stew</option>
+                <option>Matoke & Beef Stew</option>
+            </select><br><br>
+
+            <label for="quantity">Quantity*</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required><br><br>
+
+            <label for="date">Delivery Date*</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="time">Preferred Delivery Time</label><br>
+            <input type="time" id="time" name="time"><br><br>
+
+            <label for="instructions">Special Instructions</label><br>
+            <textarea id="instructions" name="instructions" placeholder="Any extra requests?"></textarea><br><br>
+
+            <label for="total">Total (KES)</label><br>
+            <input type="text" id="total" name="total" value="Auto-calculated" readonly><br><br>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Kwa Mathe | Authentic Kenyan Cuisine</p>
+</footer>
+
+</body>
+</html>
